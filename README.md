@@ -1,104 +1,140 @@
-🤖 AI Resume Generator (Full Stack)
 
-An AI-powered full-stack web application that generates professional, ATS-friendly resumes based on user input. The system uses a Spring Boot backend integrated with AI prompt engineering and a modern React frontend for a seamless user experience.
+<h1 align="center">🤖 AI Resume Generator (Full Stack)</h1>
 
-🚀 Live Features
-🧠 AI-generated resumes using structured prompts
-📄 Clean, professional, ATS-friendly output
-⚡ Real-time resume generation
-🌐 Full-stack architecture (Frontend + Backend)
-🎨 Modern UI with Tailwind CSS
-🔌 REST API integration between frontend & backend
-🏗️ Architecture Overview
-User Input → React Frontend → REST API → Spring Boot Backend → AI Prompt Processing → Generated Resume
-🛠️ Tech Stack
-🔹 Frontend
-React (Vite)
-Tailwind CSS
-JavaScript (ES6+)
-🔹 Backend
-Java + Spring Boot
-REST APIs
-Maven
-🔹 AI Integration
-Prompt-based resume generation (resume_prompt.txt)
-Structured input → formatted output pipeline
-📂 Project Structure
-ai_based_resume_generator-main/
+<p align="center">
+An AI-powered web application that generates professional, ATS-friendly resumes using a Spring Boot backend and React frontend.
+</p>
+
+<hr>
+
+<h2>🚀 Features</h2>
+<ul>
+  <li>🧠 AI-generated resumes using structured prompts</li>
+  <li>📄 Clean and ATS-friendly resume output</li>
+  <li>⚡ Real-time resume generation</li>
+  <li>🌐 Full-stack architecture (React + Spring Boot)</li>
+  <li>🎨 Modern UI with Tailwind CSS</li>
+  <li>🔌 REST API integration</li>
+</ul>
+
+<hr>
+
+<h2>🏗️ Architecture</h2>
+<pre>
+User Input → React Frontend → REST API → Spring Boot Backend → AI Processing → Resume Output
+</pre>
+
+<hr>
+
+<h2>🛠️ Tech Stack</h2>
+
+<h3>Frontend</h3>
+<ul>
+  <li>React (Vite)</li>
+  <li>Tailwind CSS</li>
+  <li>JavaScript (ES6+)</li>
+</ul>
+
+<h3>Backend</h3>
+<ul>
+  <li>Java</li>
+  <li>Spring Boot</li>
+  <li>Maven</li>
+</ul>
+
+<h3>AI Integration</h3>
+<ul>
+  <li>Prompt-based generation</li>
+  <li>Custom <code>resume_prompt.txt</code></li>
+</ul>
+
+<hr>
+
+<h2>📂 Project Structure</h2>
+
+<pre>
+ai_based_resume_generator_main/
 │
-├── resume-ai-backend/        # Spring Boot backend
-│   ├── controller/           # API endpoints
-│   ├── service/              # Business logic
-│   ├── ResumeRequest.java    # Request model
-│   └── resume_prompt.txt     # AI prompt template
+├── resume-ai-backend/
+│   ├── controller/
+│   ├── service/
+│   ├── ResumeRequest.java
+│   └── resume_prompt.txt
 │
-├── resume_frontend/          # React frontend
+├── resume_frontend/
 │   ├── src/
-│   │   ├── components/       # UI components
-│   │   ├── pages/            # Pages (Home, Generate, etc.)
-│   │   ├── api/              # API calls
-│   │   └── main.jsx
+│   ├── components/
+│   ├── pages/
 │   └── vite.config.js
-⚙️ Setup Instructions
-🔧 Backend Setup (Spring Boot)
+</pre>
+
+<hr>
+
+<h2>⚙️ Setup Instructions</h2>
+
+<h3>🔧 Backend</h3>
+<pre>
 cd resume-ai-backend
-./mvnw spring-boot:run
-
-Or (Windows):
-
 mvnw.cmd spring-boot:run
+</pre>
 
-Backend runs on:
+<p>Runs on: <code>http://localhost:8080</code></p>
 
-http://localhost:8080
-💻 Frontend Setup (React)
+<h3>💻 Frontend</h3>
+<pre>
 cd resume_frontend
 npm install
 npm run dev
+</pre>
 
-Frontend runs on:
+<p>Runs on: <code>http://localhost:5173</code></p>
 
-http://localhost:5173
-🔗 API Endpoint
-Generate Resume
+<hr>
+
+<h2>🔗 API Endpoint</h2>
+
+<h3>Generate Resume</h3>
+<pre>
 POST /api/resume/generate
-Request Body Example:
+</pre>
+
+<h3>Example Request</h3>
+<pre>
 {
   "name": "John Doe",
   "skills": ["Java", "React"],
-  "experience": "2 years in web development"
+  "experience": "2 years in development"
 }
-💡 How It Works
-User fills in details via frontend
-Data is sent to backend via REST API
-Backend formats input using resume_prompt.txt
-AI generates structured resume content
-Response is sent back and displayed
-📸 Screens (Add Yours Here)
-Landing Page
-Resume Generator Page
-Output Resume View
-🎯 Key Highlights (For Recruiters)
-Full-stack project (React + Spring Boot)
-Clean separation of concerns (Controller → Service → API)
-Real-world AI integration using prompt engineering
-Scalable architecture for adding templates or features
-Production-style project structure
-🔮 Future Improvements
-📄 Multiple resume templates
-📥 Export as PDF/DOCX
-🔐 User authentication
-🌍 Multi-language support
-🔗 LinkedIn/GitHub auto-fetch
-🤝 Contributing
+</pre>
 
-Feel free to fork and improve the project. PRs are welcome!
+<hr>
 
-👨‍💻 Author
+<h2>💡 How It Works</h2>
+<ol>
+  <li>User enters details in frontend</li>
+  <li>Data sent to backend API</li>
+  <li>Backend formats prompt</li>
+  <li>AI generates resume</li>
+  <li>Result displayed to user</li>
+</ol>
 
-Yash Raj
+<hr>
 
-GitHub: https://github.com/YashRaj-37
-⭐ Support
+<h2>🎯 Future Improvements</h2>
+<ul>
+  <li>📄 Multiple templates</li>
+  <li>📥 PDF export</li>
+  <li>🔐 Authentication</li>
+  <li>🌍 Multi-language support</li>
+</ul>
 
-If you found this useful, give it a ⭐ on GitHub!
+<hr>
+
+<h2>👨‍💻 Author</h2>
+<p><b>Yash Raj</b></p>
+<p>GitHub: <a href="https://github.com/YashRaj-37">YashRaj-37</a></p>
+
+<hr>
+
+<h2>⭐ Support</h2>
+<p>If you like this project, give it a ⭐ on GitHub!</p>
